@@ -17,7 +17,7 @@ class MathUtilsTest {
 	@Test
 	void testSqureNumber() {
 		MathUtils mathUtils = new MathUtils();
-		int expected = 4;
+		int expected = 5;
 		assertEquals(expected,mathUtils.getSquareOfNumber(2),"The square method should multiple number");
 	}
 
