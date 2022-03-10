@@ -6,4 +6,9 @@ public class MathUtils {
 		return a + b;
 	}
 
+	public int getSquareOfNumber(int i) {
+		
+		return i*i;
+	}
+
 }
