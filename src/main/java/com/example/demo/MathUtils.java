@@ -6,9 +6,12 @@ public class MathUtils {
 		return a + b;
 	}
 
-	public int getSquareOfNumber(int i) {
-		
+	public int getSquareOfNumber(int i) {	
 		return i*i;
 	}
 
+	public int getDivdeNumber(int a, int b) {
+		return a/b;
+	}
+	
 }

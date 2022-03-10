@@ -17,8 +17,15 @@ class MathUtilsTest {
 	@Test
 	void testSqureNumber() {
 		MathUtils mathUtils = new MathUtils();
-		int expected = 5;
+		int expected = 4;
 		assertEquals(expected,mathUtils.getSquareOfNumber(2),"The square method should multiple number");
+	}
+	
+	@Test
+	void testDivideNumber() {
+		MathUtils mathUtils = new MathUtils();
+		assertThrows(ArithmeticException.class, () ->  mathUtils.getDivdeNumber(1, 0));
+		//assertThrows(NullPointerException.class, () ->  mathUtils.getDivdeNumber(1, 0));
 	}
 
 }
