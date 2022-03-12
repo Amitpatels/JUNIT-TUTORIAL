@@ -7,7 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class MathUtilsTest {
 	
 	MathUtils mathUtils;
@@ -24,12 +26,12 @@ class MathUtilsTest {
 	}
 	
 	@BeforeAll
-	static void beforeAllProcess() {
+	 void beforeAllProcess() {
 		System.out.println("1. Before all processing start...");	
 	}
 	
 	@AfterAll
-	static void afterAllProcess() {
+	 void afterAllProcess() {
 		System.out.println("4. After all processing start...");	
 	}
 	
