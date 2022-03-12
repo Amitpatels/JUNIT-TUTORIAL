@@ -2,6 +2,9 @@ package com.example.demo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +14,23 @@ class MathUtilsTest {
 	
 	@BeforeEach
 	void init() {
+		System.out.println("2. operation BeforeEach... ");
 		mathUtils = new MathUtils();
+	}
+	
+	@AfterEach
+	void cleanUp() {
+		System.out.println("3. CleanUp operation afterEach... ");
+	}
+	
+	@BeforeAll
+	static void beforeAllProcess() {
+		System.out.println("1. Before all processing start...");	
+	}
+	
+	@AfterAll
+	static void afterAllProcess() {
+		System.out.println("4. After all processing start...");	
 	}
 	
 	@Test
